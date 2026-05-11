@@ -1,16 +1,13 @@
-/* style.css */
-
 body{
     font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
 
 .navbar{
     background-color:#000 !important;
 }
 
-/* HERO */
+
 
 .hero-section{
 
@@ -26,14 +23,11 @@ body{
     padding-top:120px;
 }
 
-/* TITULO */
 
 .titulo{
     font-family:'Anton', sans-serif;
     letter-spacing:5px;
 }
-
-/* LINKS */
 
 .nav-link{
     transition:0.3s;
@@ -42,8 +36,6 @@ body{
 .nav-link:hover{
     color:#ffc107 !important;
 }
-
-/* CARDS */
 
 .card{
     transition:0.3s;
