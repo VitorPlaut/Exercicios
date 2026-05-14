@@ -1,0 +1,15 @@
+.container{
+display:flexbox;
+padding: 5%;
+background-color: rgb(145, 145, 143);
+}
+
+.menu {
+    display: inline-flex;
+    gap: 20%;
+   text-align: center;
+}
+
+#hero{
+text-align: center;
+}
