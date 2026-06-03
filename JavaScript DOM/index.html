@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Usuário</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="pagina">
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho" id="cabecalho">
+      <span class="cabecalho-logo">🌐 MeuPerfil</span>
+      <button class="btn btn-ghost" id="btn-tema">🌙 Modo Escuro</button>
+    </header>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <main class="container">
+
+      <!-- CARD DE PERFIL -->
+      <div class="card perfil-card">
+
+        <!-- FOTO -->
+        <div class="foto-wrap">
+          <img
+            src="https://api.dicebear.com/7.x/adventurer/svg?seed=Felix"
+            alt="Foto de perfil"
+            class="foto"
+            id="foto-perfil"
+          >
+          <span class="foto-badge" id="status-badge">● Online</span>
+        </div>
+
+        <!-- NOME -->
+        <div class="nome-wrap">
+          <h1 class="nome" id="nome-usuario">Desenvolvedor Web</h1>
+          <p class="profissao" id="profissao-usuario">Estudante de TI</p>
+        </div>
+
+        <!-- AÇÕES DO PERFIL -->
+        <div class="perfil-acoes">
+          <button class="btn btn-primary" id="btn-editar-nome">✏️ Editar Perfil</button>
+          <button class="btn btn-outline" id="btn-trocar-foto">🖼️ Trocar Foto</button>
+        </div>
+
+        <!-- FORMULÁRIO DE EDIÇÃO (oculto inicialmente) -->
+        <div class="form-edicao" id="form-edicao">
+          <div class="form-grupo">
+            <label for="input-nome">Nome</label>
+            <input type="text" id="input-nome" placeholder="Seu nome">
+          </div>
+          <div class="form-grupo">
+            <label for="input-profissao">Profissão</label>
+            <input type="text" id="input-profissao" placeholder="Sua profissão">
+          </div>
+          <div class="form-acoes">
+            <button class="btn btn-primary" id="btn-salvar">💾 Salvar</button>
+            <button class="btn btn-ghost" id="btn-cancelar">Cancelar</button>
+          </div>
+        </div>
+
+        <!-- SELETOR DE FOTOS (oculto inicialmente) -->
+        <div class="foto-opcoes" id="foto-opcoes">
+          <p class="foto-opcoes-label">Escolha um avatar:</p>
+          <div class="foto-grid">
+            <img class="foto-opcao" data-seed="Felix"   src="https://api.dicebear.com/7.x/adventurer/svg?seed=Felix"   alt="Avatar 1">
+            <img class="foto-opcao" data-seed="Mia"     src="https://api.dicebear.com/7.x/adventurer/svg?seed=Mia"     alt="Avatar 2">
+            <img class="foto-opcao" data-seed="Zoe"     src="https://api.dicebear.com/7.x/adventurer/svg?seed=Zoe"     alt="Avatar 3">
+            <img class="foto-opcao" data-seed="Jack"    src="https://api.dicebear.com/7.x/adventurer/svg?seed=Jack"    alt="Avatar 4">
+            <img class="foto-opcao" data-seed="Luna"    src="https://api.dicebear.com/7.x/adventurer/svg?seed=Luna"    alt="Avatar 5">
+            <img class="foto-opcao" data-seed="Oliver"  src="https://api.dicebear.com/7.x/adventurer/svg?seed=Oliver"  alt="Avatar 6">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CARD DE INFORMAÇÕES -->
+      <div class="card info-card">
+
+        <div class="info-header">
+          <h2 class="card-titulo">📋 Informações</h2>
+          <button class="btn btn-ghost btn-sm" id="btn-toggle-info">Ocultar</button>
+        </div>
+
+        <div class="info-corpo" id="info-corpo">
+          <div class="info-item">
+            <span class="info-icone">📧</span>
+            <div>
+              <span class="info-label">E-mail</span>
+              <span class="info-valor" id="info-email">dev@email.com</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icone">📍</span>
+            <div>
+              <span class="info-label">Cidade</span>
+              <span class="info-valor" id="info-cidade">Chapecó, SC</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icone">🎓</span>
+            <div>
+              <span class="info-label">Curso</span>
+              <span class="info-valor" id="info-curso">Desenvolvimento Web</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icone">📅</span>
+            <div>
+              <span class="info-label">Membro desde</span>
+              <span class="info-valor" id="info-data">2024</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CARD DE HABILIDADES -->
+      <div class="card habilidades-card">
+
+        <h2 class="card-titulo">⚡ Habilidades</h2>
+
+        <div class="habilidade">
+          <div class="hab-info">
+            <span class="hab-nome">HTML</span>
+            <span class="hab-nivel" id="nivel-html">90%</span>
+          </div>
+          <div class="barra-container">
+            <div class="barra" id="barra-html" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <div class="habilidade">
+          <div class="hab-info">
+            <span class="hab-nome">CSS</span>
+            <span class="hab-nivel" id="nivel-css">75%</span>
+          </div>
+          <div class="barra-container">
+            <div class="barra" id="barra-css" style="width: 75%"></div>
+          </div>
+        </div>
+
+        <div class="habilidade">
+          <div class="hab-info">
+            <span class="hab-nome">JavaScript</span>
+            <span class="hab-nivel" id="nivel-js">40%</span>
+          </div>
+          <div class="barra-container">
+            <div class="barra barra-destaque" id="barra-js" style="width: 40%"></div>
+          </div>
+        </div>
+
+        <div class="habilidade">
+          <div class="hab-info">
+            <span class="hab-nome">Bootstrap</span>
+            <span class="hab-nivel" id="nivel-bootstrap">60%</span>
+          </div>
+          <div class="barra-container">
+            <div class="barra" id="barra-bootstrap" style="width: 60%"></div>
+          </div>
+        </div>
+
+        <button class="btn btn-outline btn-block" id="btn-aumentar-js">
+          ⬆️ Estudar JavaScript (+10%)
+        </button>
+
+      </div>
+
+      <!-- CARD DE STATUS -->
+      <div class="card status-card">
+
+        <h2 class="card-titulo">🎯 Status da Conta</h2>
+
+        <div class="status-item">
+          <span class="status-label">Perfil</span>
+          <span class="badge badge-green" id="badge-perfil">Completo</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Verificação</span>
+          <span class="badge badge-yellow" id="badge-verificacao">Pendente</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Plano</span>
+          <span class="badge badge-blue" id="badge-plano">Gratuito</span>
+        </div>
+        <div class="status-item">
+          <span class="status-label">Conexões</span>
+          <span class="status-valor" id="total-conexoes">0</span>
+        </div>
+
+        <button class="btn btn-primary btn-block" id="btn-verificar">
+          ✅ Verificar Conta
+        </button>
+
+        <button class="btn btn-outline btn-block" id="btn-upgrade">
+          ⭐ Fazer Upgrade
+        </button>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="./app.js"></script>
+
+</body>
+</html>
