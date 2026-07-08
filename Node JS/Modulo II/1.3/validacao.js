@@ -17,6 +17,6 @@ if(idade > 0){
 }
 
 module.exports = {
-     validarNome,
-     validarIdade 
+    validarNome,
+    validarIdade 
 };

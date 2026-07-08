@@ -1,0 +1,11 @@
+function validarNumeros(num1, num2) {
+    if (typeof num1 === "number" && typeof num2 === "number") {
+        return true;
+    }
+
+    return false;
+}
+
+module.exports = {
+    validarNumeros
+};
