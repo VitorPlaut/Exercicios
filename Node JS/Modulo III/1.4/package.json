@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start":"node app.js"
+  },
+  "type": "module",
+  "dependencies": {
+  "sillyname": "^0.1.0"
+  }
+}
