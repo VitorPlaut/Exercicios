@@ -2,38 +2,38 @@ const { Client } = require('pg');
 const prompt = require('prompt-sync')();
 
 // Configuração da conexão
-// São as mesmas informações que você usa no pgAdmin!
 const client = new Client({
-    host:     'localhost',  // onde o banco está rodando
-    port:     5432,         // porta padrão do PostgreSQL
-    user:     'postgres',   // usuário do banco
-    password: 'root',  // a mesma senha que você usa no pgAdmin
-    database: 'escola_db1' // o banco que criamos agora pouco
+    host: 'localhost',
+    port: 5432,
+    user: 'postgres',
+    password: 'root',
+    database: 'banco_teste' // ou banco_teste, se foi nele que você criou a tabela
 });
 
-try {
-    await client.connect();
-    const resultado = await client.query(
-        'SELECT * FROM itens ORDER BY tipo, nome'
-    );
+async function main() {
+    try {
+        // Conecta ao banco
+        await client.connect();
+        console.log("✅ Conectado ao PostgreSQL!");
 
-    console.log('\n╔════════════════════════════════════════════════════╗');
-    console.log('║         ⚗️  LOJA DO ALQUIMISTA VALDRIS              ║');
-    console.log('╚════════════════════════════════════════════════════╝\n');
+        // Consulta o total de alunos
+        const total = await client.query("SELECT COUNT(*) FROM alunos");
 
-    if (resultado.rows.length === 0) {
-        console.log('A loja está vazia no momento.');
-    } else {
-        resultado.rows.forEach(item => {
-            console.log(`[${item.id}] ${item.nome}`);
-            console.log(`    Tipo: ${item.tipo} | Preço: R$ ${item.preco} | Estoque: ${item.estoque}`);
-            console.log(`    ${item.descricao}`);
-            console.log('    ─────────────────────────────────────────');
-        });
-        console.log(`\nTotal de itens: ${resultado.rows.length}`);
+        // Consulta a média das notas
+        const media = await client.query("SELECT AVG(nota) FROM alunos");
+
+        // Exibe os resultados
+        console.log("Total de alunos:", total.rows[0].count);
+        console.log("Média geral da turma:", media.rows[0].avg);
+
+    } catch (erro) {
+        console.log("❌ Erro:", erro.message);
+    } finally {
+        // Fecha a conexão
+        await client.end();
+        console.log("🔌 Conexão encerrada.");
     }
-} catch (erro) {
-    console.log('❌ Erro ao listar itens:', erro.message);
-} finally {
-    await client.end();
 }
+
+// Executa a função principal
+main();

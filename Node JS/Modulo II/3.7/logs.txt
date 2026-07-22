@@ -1,0 +1,12 @@
+[21/07/2026, 21:25:14] Sistema iniciado
+[21/07/2026, 21:25:14] Usuário acessou sistema
+[21/07/2026, 21:25:14] Sistema encerrado
+[21/07/2026, 21:25:33] Sistema iniciado
+[21/07/2026, 21:25:33] Usuário acessou sistema
+[21/07/2026, 21:25:33] Sistema encerrado
+[21/07/2026, 21:25:53] Sistema iniciado
+[21/07/2026, 21:25:53] Usuário acessou sistema
+[21/07/2026, 21:25:53] Sistema encerrado
+[21/07/2026, 21:27:52] Sistema iniciado
+[21/07/2026, 21:27:52] Usuário acessou sistema
+[21/07/2026, 21:27:52] Sistema encerrado

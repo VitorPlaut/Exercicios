@@ -12,5 +12,3 @@ INSERT INTO alunos (nome, turma, nota, presente) VALUES
     ('Carla Matos',    '3DS', 9.2,  false),
     ('Diego Ferreira', '3DS', 4.5,  true),
     ('Elena Costa',    '3DS', 7.8,  true);
-
-    
