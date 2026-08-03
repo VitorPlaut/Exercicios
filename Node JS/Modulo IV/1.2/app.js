@@ -12,7 +12,6 @@ async function main() {
     try {
         await client.connect();
 
-        // Calcula a média da turma
         const media = await client.query(
             "SELECT AVG(nota) AS media FROM alunos"
         );
@@ -22,7 +21,6 @@ async function main() {
         console.log("Média da turma:", Number(mediaTurma).toFixed(2));
         console.log("\nAlunos acima da média:");
 
-        // Busca os alunos acima da média
         const alunos = await client.query(
             "SELECT nome, nota FROM alunos WHERE nota > $1",
             [mediaTurma]
