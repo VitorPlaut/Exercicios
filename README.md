@@ -1,129 +1,152 @@
-# 📚 Estudos — Desenvolvimento Web
+# 💻 Estudos — Desenvolvimento de Sistemas
 
-Repositório com exercícios, projetos e revisões desenvolvidos durante meus estudos de programação e desenvolvimento web.
+<div align="center">
+
+## 🚀 Minha jornada no Desenvolvimento Web
+
+Repositório criado para reunir meus exercícios, projetos, práticas e revisões
+durante minha formação em **Desenvolvimento de Sistemas**.
+
+</div>
 
 ---
+
+## 👨‍💻 Sobre
+
+Sou estudante de **Desenvolvimento de Sistemas**, atualmente estudando
+programação, desenvolvimento web e desenvolvimento Full Stack.
+
+Este repositório reúne minha evolução prática, desde os fundamentos de
+programação até aplicações envolvendo **Front-End, Back-End, APIs e Banco
+de Dados**.
+
+---
+
+# 🧠 Tecnologias Estudadas
 
 ## 💻 Linguagens
 
-| Tecnologia | Uso |
-|---|---|
-| 🟨 **JavaScript** | Lógica, interatividade, Node.js e APIs |
-| 🔵 **C#** | Programação e lógica |
-| 🔷 **C** | Fundamentos de programação |
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="55" height="55" alt="C"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="55" height="55" alt="C#"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="55" height="55" alt="JavaScript"/>
+</p>
+
+**C · C# · JavaScript**
 
 ---
 
-## 🌐 Front-End
+# 🌐 Front-End
 
-### 🟧 HTML
-Estrutura das páginas web.
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="55" height="55" alt="HTML5"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="55" height="55" alt="CSS3"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="55" height="55" alt="Bootstrap"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" width="55" height="55" alt="jQuery"/>
+</p>
 
-### 🟦 CSS
-Estilização, layouts, Flexbox, Grid e responsividade.
+### HTML5
 
-### 🟨 JavaScript
-Interatividade, DOM, eventos, funções, lógica e manipulação da página.
+- Estrutura de páginas
+- Tags semânticas
+- Formulários
+- Links
+- Imagens
+- Tabelas
+- Listas
 
-### 🟪 Bootstrap
-Framework CSS para criação de interfaces responsivas.
+### CSS3
 
-### 🟦 jQuery
-Manipulação do DOM e eventos utilizando uma biblioteca JavaScript.
+- Seletores
+- Classes e IDs
+- Box Model
+- Cores
+- Tipografia
+- Flexbox
+- Grid
+- Responsividade
 
----
+### Bootstrap
 
-## ⚙️ Back-End
+- Containers
+- Grid
+- Cards
+- Botões
+- Navbar
+- Componentes
+- Layouts responsivos
 
-### 🟢 Node.js
-Execução de JavaScript no servidor.
+### JavaScript no Front-End
 
-- Módulos
-- `npm`
-- `prompt-sync`
-- `chalk`
-- Servidores HTTP
-- APIs
+- Variáveis
+- Condicionais
+- Loops
+- Funções
+- Arrays
+- Objetos
+- Eventos
+- DOM
+- `querySelector`
+- Manipulação de elementos
+- `innerHTML`
+- `innerText`
+- `addEventListener`
 - `fetch`
 
-### 🟩 Express.js
-Framework para criação de servidores e APIs.
+### jQuery
+
+- Seleção de elementos
+- Manipulação do DOM
+- Eventos
+- Sintaxe simplificada para JavaScript
+
+---
+
+# ⚙️ Back-End
+
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="55" height="55" alt="Node.js"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="55" height="55" alt="Express.js"/>
+</p>
+
+## Node.js
+
+- Execução de JavaScript no servidor
+- `npm`
+- `package.json`
+- Instalação de dependências
+- ES Modules
+- `import`
+- `export`
+- `require`
+- Servidores HTTP
+- APIs
+- `async / await`
+- `try / catch`
+- `fetch`
+
+### Bibliotecas utilizadas
+
+- `prompt-sync`
+- `chalk`
+- `pg`
+
+---
+
+# 🚀 Express.js
+
+Práticas realizadas com criação de servidores e APIs.
 
 - Rotas
 - Middlewares
 - `express.json()`
+- `req`
+- `res`
+- `next()`
 - Parâmetros de rota
 - Query parameters
-- CRUD
-- Integração Front-End + Back-End
-
-### 🐘 PostgreSQL
-Banco de dados relacional.
-
-- SQL
-- `SELECT`
-- `INSERT`
-- `UPDATE`
-- `DELETE`
-- `WHERE`
-- `JOIN`
-- `INNER JOIN`
-- `LEFT JOIN`
-- Foreign Keys
-- Relacionamentos
-- Agregações
-- `AVG()`
-- `COUNT()`
-- `GROUP BY`
-- Queries parametrizadas (`$1`, `$2`...)
-
----
-
-## 🔌 APIs e Web
-
-- HTTP
-- Request / Response
-- Métodos HTTP
-  - `GET`
-  - `POST`
-  - `PUT`
-  - `PATCH`
-  - `DELETE`
-- Status Codes
 - JSON
-- Headers
-- `Content-Type`
-- CORS
-- APIs públicas
-- Consumo de APIs com `fetch`
-- Parâmetros de rota
-- Query parameters
+- CRUD
+- Status HTTP
+- Integração com PostgreSQL
 
----
-
-## 🗄️ Banco de Dados
-
-### PostgreSQL + Node.js
-
-Prática de conexão entre aplicações Node.js e PostgreSQL utilizando `pg`.
-
-```text
-JavaScript
-    ↓
-Node.js
-    ↓
-Express
-    ↓
-PostgreSQL
-
----
-
-<div align="center">
-
-### 👨‍💻 Feito por Vitor
-
-🎓 **Estudante de Desenvolvimento de Sistemas**  
-💻 **Desenvolvimento Web | Full Stack**  
-🚀 **Aprendendo, praticando e evoluindo.**
-
-</div>
